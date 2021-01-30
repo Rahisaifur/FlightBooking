@@ -80,6 +80,12 @@ nav ul li a:hover, a.active{
     cursor: pointer;
 
 }
+.plus-minus-btn #economyClassPlusBtn{
+    cursor:pointer;
+}
+.plus-minus-btn #economyClassMinusBtn{
+    cursor: pointer;
+}
 .booking-form  .calculations{
     margin: 10px 0;
 }
