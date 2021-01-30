@@ -4,7 +4,7 @@ const economyMinusBtn = document.getElementById("economyClassMinusBtn");
 const economyPlusBtn = document.getElementById("economyClassPlusBtn");
 const firstClassTicket = document.getElementById("firstClassTicketQuantity");
 const economyClassTicket = document.getElementById("economyClassTicketQuantity");
-const bookingButton=document.getElementById("bookNowBtn");
+const bookingButton = document.getElementById("bookNowBtn");
 
 
 //function to Calculate totalCost
@@ -18,7 +18,7 @@ function subTotal() {
 //Increase ticket amount
 function increaseTicket(id) {
     id.value++;
-    
+
 }
 //decrease Ticket amount
 function decreaseTicket(id) {
@@ -33,7 +33,7 @@ function decreaseTicket(id) {
 
 firstClassPlusButton.addEventListener('click', function () {
     increaseTicket(firstClassTicket);
-  subTotal();
+    subTotal();
 });
 
 firstClassMinusBtn.addEventListener('click', function () {
@@ -44,21 +44,21 @@ firstClassMinusBtn.addEventListener('click', function () {
 
 economyPlusBtn.addEventListener('click', function () {
     increaseTicket(economyClassTicket);
-   subTotal();
+    subTotal();
 });
 
 economyMinusBtn.addEventListener('click', function () {
     decreaseTicket(economyClassTicket);
-   subTotal();
+    subTotal();
 });
 
 
-bookingButton.addEventListener('click',function(){
-    var destinationConfirm= document.getElementById("destination").value;
-    var date= document.getElementById("departureDate").value;
+bookingButton.addEventListener('click', function () {
+    var destinationConfirm = document.getElementById("destination").value;
+    var date = document.getElementById("departureDate").value;
     var total = (document.getElementById("totalAmount").innerText);
-    if(destinationConfirm!=''&& date!=''){
-    alert("your trip to "+destinationConfirm+" is confirmed on "+date+" and your total cost is $"+total);
+    if (destinationConfirm != '' && date != '') {
+        alert("your trip to " + destinationConfirm + " is confirmed on " + date + " and your total cost is $" + total);
     }
 
 });
